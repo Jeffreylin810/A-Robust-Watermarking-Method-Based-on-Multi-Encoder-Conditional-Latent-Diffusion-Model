@@ -1,0 +1,5 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,dropout_ba,min_attack,train_time_s,eval_time_s,residual_lap_preserve_weight,anti_cancel_weight,anti_cancel_margin,note
+exp41_seed62_full_rerun_reference_rgb,reference,34.0293,0.982,0.0443,99.98,98.68,89.94,,Paper_Dropout_r03,2522.55,59.98,,,,exp41 original StageD
+exp44_hardcase_dropout_replay500,negative_reference,34.5561,0.9839,0.0391,99.98,98.47,88.13,,Paper_Dropout_r03,124.42,59.64,,,,hardcase replay failed
+exp47A_stageD_mild_residual_guard,mild_guard,30.4427,0.9356,0.08342946452274919,99.99,98.50999999999999,88.55,88.55,Paper_Dropout_r03,312.58,63.88,8.0,40.0,0.935,"StageC -> guarded StageD, mild residual/frequency guard"
+exp47B_stageD_strong_residual_guard,strong_guard,29.7203,0.9189,0.08900373838469386,99.99,98.33909090909091,87.44,87.44,Paper_Dropout_r03,317.04,64.06,16.0,80.0,0.925,"StageC -> guarded StageD, stronger residual/frequency guard"

@@ -1,0 +1,7 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,train_time,apply_time
+plus20k_refresh500,rgb,33.8299,0.9738,0.03830676269810647,99.39,95.91,83.36,Paper_Dropout_r03,283.14s,61.13s
+A_weakattack_plus5k_rgb,rgb,32.9388,0.9715,0.04828327928110957,99.89,98.20545454545454,89.61,Paper_Dropout_r03,1109.26s,60.40s
+A_dropout_focus_plus5k_rgb_reuse_refresh500,rgb,32.5223,0.9705,0.05230967901088297,99.91,98.6372727272727,91.43,Paper_Dropout_r03,1091.72s,60.94s
+exp28_quality_recovery_refresh500,rgb,33.6062,0.9731,0.0407,99.43,97.76,88.63,Paper_Dropout_r03,394.14s,61.41s
+exp28_conservative_refresh250,rgb,32.5422,0.9699,0.05162198605202138,99.93,98.60818181818182,91.13,Paper_Dropout_r03,197.15s,61.17s
+exp28_message_preserving_attackaware_refresh500,rgb,32.8792,0.9699,0.04762168981134891,99.92,98.38727272727273,89.7,Paper_Dropout_r03,317.17s,60.71s

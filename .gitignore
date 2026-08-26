@@ -1,0 +1,52 @@
+# Python / cache
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+
+# Local environments
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Large experiment outputs
+Result/
+results/
+logs/
+temp/
+webp_50/
+ckpts/
+datasets/
+
+# Checkpoints and model artifacts
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.onnx
+
+# Generated images and arrays
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.tif
+*.tiff
+*.npy
+*.npz
+*.pkl
+
+# Local run logs
+*.log
+*.out
+*.err
+
+# Keep summary documents in explicit lightweight folders if needed.
+!docs/**/*.md
+!configs/**/*.yml
+!configs/**/*.yaml
+!scripts/**/*.py
+!scripts/**/*.sh

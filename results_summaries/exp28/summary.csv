@@ -1,0 +1,7 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,train_time,apply_time
+plus20k_refresh500,rgb,33.8299,0.9738,0.03830676269810647,99.39,95.91,83.36,Paper_Dropout_r03,283.14s,61.13s
+A_weakattack_plus5k_rgb,rgb,32.9388,0.9715,0.04828327928110957,99.89,98.20545454545454,89.61,Paper_Dropout_r03,1109.26s,60.40s
+bitweighted_refiner_repair,rgb,34.1088,0.9756,0.03636835849005729,99.33,95.76181818181817,82.78,Paper_Dropout_r03,287.88s,61.81s
+base_bitweighted_weakattack_plus5k_rgb,rgb,32.9349,0.9714,0.04803618223033845,99.83,98.12363636363635,89.63,Paper_Dropout_r03,1095.38s,60.36s
+A_dropout_focus_plus5k,base,24.6456,0.7073,0.09858365674689412,100.0,98.0190909090909,87.95,Paper_Dropout_r03,1091.72s,N/A
+A_dropout_focus_plus5k_rgb_reuse_refresh500,rgb,32.5223,0.9705,0.05230967901088297,99.91,98.6372727272727,91.43,Paper_Dropout_r03,1091.72s,60.94s

@@ -1,0 +1,71 @@
+data:
+  dataset: CoCo
+  image_size: 256
+  channels: 3
+  num_workers: 0
+  data_dir: ./
+  dataset_root: /home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/results/formal_reuse_datasets/CoCo256_train5000_second_formal
+  output_dir: ./results/formal_training/m07_second5000_base30k
+  conditional: true
+model:
+  in_channels: 3
+  out_ch: 3
+  resolution: 256
+  ch: 128
+  ch_mult:
+  - 1
+  - 2
+  - 3
+  - 4
+  num_res_blocks: 2
+  attn_resolutions:
+  - 16
+  dropout: 0.0
+  ema_rate: 0.999
+  ema: true
+  resamp_with_conv: true
+diffusion:
+  beta_schedule: linear
+  beta_start: 0.0001
+  beta_end: 0.02
+  num_diffusion_timesteps: 1000
+training:
+  patch_n: 1
+  batch_size: 2
+  n_epochs: 6
+  n_iters: 2000000
+  snapshot_freq: 100000000
+  validation_freq: 100000000
+  save_checkpoints: false
+  save_final_checkpoint: true
+  detailed_profile: false
+  profile_interval: 10
+sampling:
+  batch_size: 1
+  last_only: true
+optim:
+  weight_decay: 0.0
+  optimizer: Adam
+  lr: 1.0e-05
+  reset_lr_on_resume: true
+  amsgrad: false
+  eps: 1.0e-08
+watermarking:
+  message_length: 32
+  strength_factor: 1
+  x0_loss_weight: 1
+  message_loss_weight: 30
+  rgb_loss_weight: 20
+  rgb_psnr_hinge_weight: 200
+  rgb_psnr_target: 36.0
+  rgb_psnr_max_value: 2.0
+  message_map_mode: bitplane
+  message_recovery_path: pixel_bridge
+  attack_profile: identity_nongeom_curriculum_light
+  attack_uses_cover: false
+  combined_attack: true
+latent:
+  enabled: true
+  model_path: /home/jeffrey/projects/Test/DiffW-main/stable-diffusion-2-1-base
+  scaling_factor: null
+  deterministic_encode: true

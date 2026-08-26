@@ -1,0 +1,5 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,train_time,apply_time
+exp34_full_candidate_validation_rgb_seed61,rgb,33.2333,0.9741,0.045815825197845696,99.9,98.35454545454546,89.72,Paper_Dropout_r03,2325.12s,60.40s
+exp37_base_dropout_margin_plus1epoch_seed61,rgb,33.1895,0.9748,0.04573223985731602,99.91,98.58454545454546,90.11,Paper_Dropout_r03,312.06s,60.84s
+exp38_base_dropout_margin_seed62,base,24.6189,0.7074,0.10065990643948317,100.0,98.36363636363636,88.72,Paper_Dropout_r03,1079.07s,100.94s
+exp38_rgb_dropout_margin_seed62_balanced_refiner,rgb,33.1252,0.9745,0.04665679559670389,99.93,98.60272727272726,90.31,Paper_Dropout_r03,306.47s,59.46s

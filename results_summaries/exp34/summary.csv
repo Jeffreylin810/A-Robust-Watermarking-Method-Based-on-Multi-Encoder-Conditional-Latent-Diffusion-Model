@@ -1,0 +1,5 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,train_time,apply_time
+exp28_original_candidate_base_rgb,rgb,32.5223,0.9705,0.05230967901088297,99.91,98.6372727272727,91.43,Paper_Dropout_r03,1091.72s,60.94s
+exp33_dropout_balanced_candidate,rgb,33.2346,0.9744,0.045658645013347265,99.89,98.41090909090912,90.05,Paper_Dropout_r03,309.46s,60.04s
+exp34_full_candidate_dropout_focus_base,base,24.6518,0.7079,0.09807312620058656,100.0,97.92636363636365,87.28,Paper_Dropout_r03,1088.54s,99.20s
+exp34_full_candidate_dropout_balanced_rgb,rgb,33.2333,0.9741,0.045815825197845696,99.9,98.35454545454546,89.72,Paper_Dropout_r03,2325.12s,60.40s

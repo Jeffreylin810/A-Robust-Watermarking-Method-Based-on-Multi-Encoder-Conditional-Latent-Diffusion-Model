@@ -1,0 +1,40 @@
+name: o256-watermark
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
+  - pytorch-cuda=12.1
+  - numpy=1.26
+  - scipy
+  - pandas
+  - pillow
+  - opencv
+  - scikit-image
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - tensorboard
+  - tensorboardx
+  - kornia
+  - requests
+  - pip:
+      - lpips==0.1.4
+      - pytorch-msssim==1.0.0
+      - bm3d==4.0.3
+      - bm4d==4.2.5
+      - compressai==1.2.8
+      - diffusers==0.37.0
+      - transformers==5.3.0
+      - accelerate==1.13.0
+      - safetensors==0.7.0
+      - einops==0.8.2
+      - imageio==2.37.3
+      - psutil==7.2.2
+      - rich==14.3.3

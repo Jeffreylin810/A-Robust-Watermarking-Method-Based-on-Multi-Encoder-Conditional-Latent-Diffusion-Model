@@ -1,0 +1,4 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,base_train_time_s,refiner_train_time_s,eval_time_s
+exp38_seed62_continuation_reference_rgb,reference,33.1252,0.9745,0.0467,99.93,98.6,90.31,Paper_Dropout_r03,N/A,N/A,N/A
+exp40_base65_dropout_margin,base,24.6354,0.7084,0.09922092005982995,100.0,98.45363636363636,89.18,Paper_Dropout_r03,13632.29,N/A,105.04
+exp40_rgb_full_from_scratch_dropout_balanced,rgb,33.9372,0.9819,0.040887248249724506,99.96,98.76545454545455,91.01,Paper_Dropout_r03,13632.29,2527.77,59.65

@@ -1,0 +1,5 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,train_time,apply_time
+plus20k_refresh500,rgb,33.8299,0.9738,0.03830676269810647,99.39,95.91,83.36,Paper_Dropout_r03,283.14s,61.13s
+A_weakattack_plus5k_rgb,rgb,32.9388,0.9715,0.04828327928110957,99.89,98.20545454545454,89.61,Paper_Dropout_r03,1109.26s,60.40s
+A_dropout_focus_plus5k_rgb_reuse_refresh500,rgb,32.5223,0.9705,0.05230967901088297,99.91,98.6372727272727,91.43,Paper_Dropout_r03,1091.72s,60.94s
+exp28_quality_recovery_refresh500,rgb,33.6062,0.977,0.04115335020143539,99.88,98.16818181818181,88.63,Paper_Dropout_r03,285.17s,61.69s

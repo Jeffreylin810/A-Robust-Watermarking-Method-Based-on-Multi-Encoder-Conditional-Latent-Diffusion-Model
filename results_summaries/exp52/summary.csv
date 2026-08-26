@@ -1,0 +1,6 @@
+variant,kind,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,dropout_ba,min_attack,base_train_time_s,refiner_train_time_s,eval_time_s,note
+exp40_seed61_formal_stageD_reference,reference,33.9372,0.9819,0.0409,99.96,98.77,91.01,91.01,Paper_Dropout_r03,13632.29,2527.77,59.65,seed61 formal StageD reference
+exp41_seed62_formal_stageD_reference,reference,34.0293,0.982,0.0443,99.98,98.68,89.94,89.94,Paper_Dropout_r03,13632.29,2522.55,59.98,seed62 formal StageD reference; misses Dropout floor by 0.06
+exp51_seed62_stageE_continuation_reference,continuation_reference,33.9524,0.982,0.0446,99.98,98.72,90.16,90.16,Paper_Dropout_r03,N/A,260.55,60.51,seed62 StageE continuation probe reference
+exp52_base65_dropout_margin,base,24.6601,0.7084,0.10082056935504079,100.0,98.22727272727273,87.1,87.1,Paper_Dropout_r03,13635.71,N/A,104.82,fresh seed62 base65 rerun under locked protocol
+exp52_rgb_full_from_scratch_stageE,rgb_stageE,34.0379,0.9825,0.04513346747867763,99.99,98.76181818181817,90.33,90.33,Paper_Dropout_r03,13635.71,2789.87,60.14,fresh seed62 full protocol with StageE included

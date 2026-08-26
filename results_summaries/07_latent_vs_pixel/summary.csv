@@ -1,0 +1,4 @@
+experiment,subset,method,training_steps,psnr,ssim,lpips,clean_ba,nongeom_avg_ba,min_ba,notes
+supplementary_latent_vs_pixel_20260627,train1000_eval1000_unseen,Pixel bitplane,30k,35.2217,0.9398,0.007949,99.95,61.84,50.27,"Pixel-space bitplane matched baseline; high image fidelity and clean BA, but weak under VAE round-trip and several non-geometric attacks."
+supplementary_latent_vs_pixel_20260627,train1000_eval1000_unseen,Latent linear,30k,24.6031,0.7082,0.081452,78.03,69.66,59.08,"Latent-space linear message mapping; weaker clean BA than latent bitplane, used as message-representation ablation."
+supplementary_latent_vs_pixel_20260627,train1000_eval1000_unseen,Latent bitplane,30k,24.5414,0.7085,0.096943,98.42,88.04,67.90,"Latent-space bitplane mapping; lower image fidelity than pixel bitplane, but substantially stronger non-geometric BA and VAE round-trip survival."

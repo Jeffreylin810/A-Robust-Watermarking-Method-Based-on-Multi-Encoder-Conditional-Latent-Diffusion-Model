@@ -1,0 +1,12 @@
+paper_display_name,raw_log_name,attack_type,parameter,used_in_exp52,used_in_exp53,used_in_exp54,source_file
+Paper_Dropout_r03,Paper_Dropout_r03,dropout,r=0.3,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+GaussianBlur sigma2,Paper_GaussianBlur_sigma2,gaussian_blur,sigma=2,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+GaussianBlur sigma3,Paper_GaussianBlur_sigma3,gaussian_blur,sigma=3,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+GaussianBlur sigma4,Paper_GaussianBlur_sigma4,gaussian_blur,sigma=4,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+GaussianNoise additive arg0.3,Paper_GaussianNoise_arg03,gaussian_noise,GN argument=0.3,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+GaussianNoise sigma0.3 / var0.09,Paper_GaussianNoise_sigma03_var009,gaussian_noise,GN argument=0.09,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+JPEG30,Paper_JPEG_Q30,jpeg,quality=30,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+JPEG40,Paper_JPEG_Q40,jpeg,quality=40,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+JPEG50,Paper_JPEG_Q50,jpeg,quality=50,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+MedianFilter 5,Paper_MedianFilter_w5,median_filter,window=5,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104
+SaltPepper 0.2,Paper_SaltPepper_r02,salt_pepper,r=0.2,yes,yes,yes,/home/jeffrey/projects/diffw_comparison_experiment_5_27/O256-PAPER/attack_eval_diffw_paper_matched.py:71-104

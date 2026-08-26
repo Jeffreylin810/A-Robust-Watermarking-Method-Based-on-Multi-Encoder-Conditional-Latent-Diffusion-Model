@@ -1,0 +1,5 @@
+variant,psnr,ssim,lpips,clean_ba,avg_ba,min_ba,min_attack,train_time,apply_time
+formal_rgb,32.9034,0.9589,0.0461,95.81,87.38,72.93,Paper_Dropout_r03,02:33:57.31,N/A
+plus10k_rgb_reuse,32.4787,0.9581,0.051405776601284744,98.97,94.63909090909091,82.27,Paper_Dropout_r03,60.77s,reuse_formal_refiner
+refresh500,33.5891,0.9702,0.04108888433501125,98.59,94.10363636363635,80.79,Paper_Dropout_r03,284.74s,63.42s
+refresh1000,33.7365,0.9716,0.040087051345966754,98.56,94.09454545454545,80.73,Paper_Dropout_r03,279.71s,60.79s

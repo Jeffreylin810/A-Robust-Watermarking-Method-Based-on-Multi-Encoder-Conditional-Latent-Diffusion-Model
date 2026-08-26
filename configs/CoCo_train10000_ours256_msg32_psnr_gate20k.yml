@@ -1,0 +1,70 @@
+data:
+    dataset: "CoCo"
+    image_size: 256
+    channels: 3
+    num_workers: 0
+    data_dir: "./"
+    dataset_root: "/home/jeffrey/projects/experiment_input_folder/CoCo_256_paper_final/train10000_eval1000_unseen"
+    output_dir: "./"
+    conditional: True
+
+model:
+    in_channels: 3
+    out_ch: 3
+    resolution: 256
+    ch: 128
+    ch_mult: [1, 2, 3, 4]
+    num_res_blocks: 2
+    attn_resolutions: [16, ]
+    dropout: 0.0
+    ema_rate: 0.999
+    ema: True
+    resamp_with_conv: True
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+
+training:
+    patch_n: 1
+    batch_size: 2
+    # PSNR gate sanity: train10000 / batch2 / 4 epochs = 20k steps.
+    # Purpose: test whether msg32 can keep clean BA while PSNR is pushed above 30.
+    n_epochs: 4
+    n_iters: 2000000
+    snapshot_freq: 100000000
+    validation_freq: 100000000
+    save_checkpoints: False
+    save_final_checkpoint: True
+    detailed_profile: False
+    profile_interval: 10
+
+sampling:
+    batch_size: 1
+    last_only: True
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.00002
+    amsgrad: False
+    eps: 0.00000001
+
+watermarking:
+    message_length: 32
+    strength_factor: 1
+    x0_loss_weight: 1
+    message_loss_weight: 10
+    rgb_loss_weight: 100
+    message_map_mode: "bitplane"
+    attack_profile: "identity_only"
+    attack_uses_cover: False
+    combined_attack: True
+
+latent:
+    enabled: True
+    model_path: "/home/jeffrey/projects/Test/DiffW-main/stable-diffusion-2-1-base"
+    scaling_factor:
+    deterministic_encode: True

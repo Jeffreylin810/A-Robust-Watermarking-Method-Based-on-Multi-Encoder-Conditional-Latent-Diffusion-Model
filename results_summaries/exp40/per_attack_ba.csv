@@ -1,0 +1,12 @@
+attack,ba
+Paper_Dropout_r03,91.01
+Paper_GaussianBlur_sigma2,99.98
+Paper_GaussianBlur_sigma3,99.98
+Paper_GaussianBlur_sigma4,99.98
+Paper_GaussianNoise_arg03,97.75
+Paper_GaussianNoise_sigma03_var009,99.58
+Paper_JPEG_Q30,99.87
+Paper_JPEG_Q40,99.88
+Paper_JPEG_Q50,99.93
+Paper_MedianFilter_w5,99.98
+Paper_SaltPepper_r02,98.48

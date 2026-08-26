@@ -1,0 +1,4 @@
+variant,kind,images,avg_ba,min_image_ba,p05_image_ba,p10_image_ba,hard_lt90_images,hard_lt80_images,min_bit_ba,min_bit,weak_bits_top8,weak_bits_top8_ba
+exp41_base_dropout,base,1000,86.64375,34.375,65.625,71.875,501,260,84.39999999999999,10,10 18 23 9 24 1 13 29,84.40 84.70 84.70 85.00 85.30 85.50 85.50 85.60
+exp41_rgb_dropout,rgb_reference,1000,89.9375,40.625,71.875,78.125,397,148,87.3,10,10 9 18 19 26 23 13 11,87.30 87.40 88.00 88.60 88.60 88.70 89.20 89.20
+exp44_rgb_dropout,rgb_hardcase_replay,1000,88.134375,37.5,68.75,75.0,469,198,85.9,9,9 10 23 18 11 26 2 13,85.90 86.40 86.40 86.40 87.00 87.10 87.10 87.30

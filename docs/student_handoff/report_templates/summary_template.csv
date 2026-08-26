@@ -1,0 +1,2 @@
+dataset,num_images,preprocessing,model_checkpoint,refiner_checkpoint,psnr,ssim,lpips,clean_ba,nongeom_avg_ba,min_ba,min_attack,paper_dropout_r03_ba,total_apply_time_s,ms_per_image,notes
+
